@@ -18,15 +18,15 @@
   
   
   <title>Hexo-GitHub搭建教程 | 时砾逐光</title>
-  <meta name="description" content="#注意事项默认已有git基础且本机已连接GitHub 1.创建GitHub Pages 仓库 在GitHub主页右上角点击+号，再点击New repository创建仓库。 接着在Repository name内输入[你的用户名].github.io 点击Create repository就创建成功  创建成功后博客地址为：https:&#x2F;&#x2F;[你的用户名].github.io 2.本地安装Hexo程">
+  <meta name="description" content="#注意事项 默认已有git基础且本机已连接GitHub 1.创建GitHub Pages 仓库  在GitHub主页右上角点击+号，再点击New repository创建仓库。 接着在Repository name内输入[你的用户名].github.io 点击Create repository就创建成功  创建成功后博客地址为：https:&#x2F;&#x2F;[你的用户名].github.io 2.本地安装Hex">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo-GitHub搭建教程">
 <meta property="og:url" content="http://example.com/2022/10/16/Hexo-Github%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/index.html">
 <meta property="og:site_name" content="时砾逐光">
-<meta property="og:description" content="#注意事项默认已有git基础且本机已连接GitHub 1.创建GitHub Pages 仓库 在GitHub主页右上角点击+号，再点击New repository创建仓库。 接着在Repository name内输入[你的用户名].github.io 点击Create repository就创建成功  创建成功后博客地址为：https:&#x2F;&#x2F;[你的用户名].github.io 2.本地安装Hexo程">
+<meta property="og:description" content="#注意事项 默认已有git基础且本机已连接GitHub 1.创建GitHub Pages 仓库  在GitHub主页右上角点击+号，再点击New repository创建仓库。 接着在Repository name内输入[你的用户名].github.io 点击Create repository就创建成功  创建成功后博客地址为：https:&#x2F;&#x2F;[你的用户名].github.io 2.本地安装Hex">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-10-16T07:56:22.000Z">
-<meta property="article:modified_time" content="2022-10-16T14:48:21.367Z">
+<meta property="article:modified_time" content="2022-10-17T00:07:24.053Z">
 <meta property="article:author" content="Hiroshi">
 <meta property="article:tag" content="教程">
 <meta name="twitter:card" content="summary">
@@ -298,56 +298,52 @@
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <h4 id="注意事项"><a href="#注意事项" class="headerlink" title="#注意事项"></a>#注意事项</h4><p>默认已有git基础且本机已连接GitHub</p>
-<h4 id="1-创建GitHub-Pages-仓库"><a href="#1-创建GitHub-Pages-仓库" class="headerlink" title="1.创建GitHub Pages 仓库"></a>1.创建GitHub Pages 仓库</h4><ul>
+        <h4 id="注意事项">#注意事项</h4>
+<p>默认已有git基础且本机已连接GitHub</p>
+<h4 id="1-创建GitHub-Pages-仓库">1.创建GitHub Pages 仓库</h4>
+<ul>
 <li>在GitHub主页右上角点击+号，再点击New repository创建仓库。</li>
 <li>接着在Repository name内输入[你的用户名].github.io</li>
 <li>点击Create repository就创建成功</li>
 </ul>
 <p>创建成功后博客地址为：<code>https://[你的用户名].github.io</code></p>
-<h4 id="2-本地安装Hexo程序"><a href="#2-本地安装Hexo程序" class="headerlink" title="2.本地安装Hexo程序"></a>2.本地安装Hexo程序</h4><ul>
+<h4 id="2-本地安装Hexo程序">2.本地安装Hexo程序</h4>
+<ul>
 <li>安装Node.js,一路next即可</li>
 </ul>
 <blockquote>
-<p>Node.js：<a href="https://link.zhihu.com/?target=https://nodejs.org/zh-cn">https://nodejs.org/zh-cn</a></p>
+<p>Node.js：<a href="https://link.zhihu.com/?target=https%3A//nodejs.org/zh-cn">https://nodejs.org/zh-cn</a></p>
 </blockquote>
 <ul>
-<li><p>使用指令<code>npm install -g hexo-cli</code>安装 ,mac用户需要在指令前加上<code>sudo</code>,这一步请耐心等待</p>
+<li>
+<p>使用指令<code>npm install -g hexo-cli</code>安装 ,mac用户需要在指令前加上<code>sudo</code>,这一步请耐心等待</p>
 </li>
-<li><p>在本地新建一个用于存放博客文件的文件夹，例如blog文件夹，在此文件夹进入Git Bash</p>
+<li>
+<p>在本地新建一个用于存放博客文件的文件夹，例如blog文件夹，在此文件夹进入Git Bash</p>
 </li>
-<li><p>初始化博客文件并安装组件</p>
+<li>
+<p>初始化博客文件并安装组件</p>
 </li>
 </ul>
 <figure class="highlight text"><table><tr><td class="code"><pre><span class="line">hexo init      	# 初始化</span><br><span class="line">npm install    	# 安装组件</span><br></pre></td></tr></table></figure>
-
-
-
 <ul>
 <li>完成后便可以在本地进行预览了（输入指令后不要关闭窗口）</li>
 </ul>
 <figure class="highlight tex"><table><tr><td class="code"><pre><span class="line">hexo g       <span class="params">#</span> 生成页面  </span><br><span class="line">hexo s       <span class="params">#</span> 启动预览</span><br></pre></td></tr></table></figure>
-
 <ul>
 <li>在浏览器中输入<code>localhost:4000</code>进行预览，出现Hexo的默认页面则本地博客安装成功！</li>
 <li>如果无法预览则可能是端口被占用，可以找出占用端口的程序并关闭，或者也可以修改Hexo启动的端口,这里改为5000端口</li>
 </ul>
 <figure class="highlight text"><table><tr><td class="code"><pre><span class="line">hexo s -p 5000</span><br></pre></td></tr></table></figure>
-
-
-
-
-
-<h4 id="3-部署-Hexo-到-GitHub-Pages"><a href="#3-部署-Hexo-到-GitHub-Pages" class="headerlink" title="3.部署 Hexo 到 GitHub Pages"></a>3.部署 Hexo 到 GitHub Pages</h4><ul>
+<h4 id="3-部署-Hexo-到-GitHub-Pages">3.部署 Hexo 到 GitHub Pages</h4>
+<ul>
 <li>安装 hexo-deployer-git</li>
 </ul>
 <figure class="highlight text"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-
 <ul>
 <li>修改<b>_config.yml</b>文件末尾的 Deployment 部分，修改成如下</li>
 </ul>
 <figure class="highlight text"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: git@github.com:用户名/用户名.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-
 <ul>
 <li>运行<code>hexo d</code>部署网站，成功后便可以在<code>https://用户名.github.io</code>看到自己的博客了</li>
 </ul>
