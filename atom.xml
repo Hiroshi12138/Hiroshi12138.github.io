@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-10-17T06:30:23.587Z</updated>
+  <updated>2022-10-17T11:43:38.858Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,16 +21,19 @@
     <link href="http://example.com/2022/10/17/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AC%94%E8%AE%B0/"/>
     <id>http://example.com/2022/10/17/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AC%94%E8%AE%B0/</id>
     <published>2022-10-17T02:45:16.000Z</published>
-    <updated>2022-10-17T06:30:23.587Z</updated>
+    <updated>2022-10-17T11:43:38.858Z</updated>
     
-    <content type="html"><![CDATA[<h4 id="跟着PHP课程重新记录一下MySQL的笔记"># 跟着PHP课程重新记录一下MySQL的笔记</h4><h4 id="1-创建数据库格式：">1.创建数据库格式：</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">create database 数据库名;</span><br><span class="line">create database 数据库名 charset=字符集;   #设定默认字符集</span><br><span class="line">create database 数据库名 default character set 字符集;   #设定默认字符集</span><br></pre></td></tr></table></figure><h4 id="2-删除数据库：">2.删除数据库：</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">drop database 数据库名;</span><br></pre></td></tr></table></figure><h4 id="3-使用数据库">3.使用数据库</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">use 数据库名;</span><br></pre></td></tr></table></figure><h4 id="4-查询当前正在使用的数据库：">4.查询当前正在使用的数据库：</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">select database();</span><br></pre></td></tr></table></figure><h4 id="5-创建数据表">5.创建数据表</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">create table 表名 (字段名 字段类型 [NOT NULL]);</span><br></pre></td></tr></table></figure><h4 id="6-查询数据库的表格个数">6.查询数据库的表格个数</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">show tables from 数据库名;</span><br><span class="line"></span><br><span class="line">#第二种写法,如果已经选择了使用的数据库则可以直接</span><br><span class="line">show tables;</span><br></pre></td></tr></table></figure><h4 id="7-修改表名">7.修改表名</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">rename table 旧表名 to 新表名;</span><br></pre></td></tr></table></figure><h4 id="8-查看表格的详细信息">8.查看表格的详细信息</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">show create table 表名;</span><br></pre></td></tr></table></figure><h4 id="9-查看字段">9.查看字段</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">desc 表名;</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<h4 id="跟着PHP课程重新记录一下MySQL的笔记"># 跟着PHP课程重新记录一下MySQL的笔记</h4><h4 id="1-数据库操作：">1.数据库操作：</h4><ul><li>创建数据库</li></ul><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">create database 数据库名;</span><br><span class="line">create database 数据库名 charset=字符集;   #设定默认字符集</span><br><span class="line">create database 数据库名 default character set 字符集;   #设定默认字符集</span><br></pre></td></tr></table></figure><ul><li>删除数据库</li></ul><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">drop database 数据库名;</span><br></pre></td></tr></table></figure><ul><li>使用数据库</li></ul><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">use 数据库名;</span><br></pre></td></tr></table></figure><ul><li>查询当前正在使用的数据库</li></ul><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">select database();</span><br></pre></td></tr></table></figure><ul><li>设置数据库字符集</li></ul><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h4 id="2-数据表操作">2.数据表操作</h4><ul><li>创建表</li></ul><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">create table 表名 (字段名 字段类型 [NOT NULL]);</span><br></pre></td></tr></table></figure><ul><li>查询数据库的表格个数</li></ul><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 第一种写法</span><br><span class="line">show tables from 数据库名;</span><br><span class="line"></span><br><span class="line"># 第二种写法,如果已经选择了使用的数据库则可以直接</span><br><span class="line">show tables;</span><br></pre></td></tr></table></figure><ul><li>修改表名</li></ul><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">rename table 旧表名 to 新表名;</span><br></pre></td></tr></table></figure><ul><li>查看表格的详细信息</li></ul><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">show create table 表名;</span><br></pre></td></tr></table></figure><ul><li>查看字段</li></ul><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">desc 表名;</span><br></pre></td></tr></table></figure>]]></content>
     
     
       
       
     <summary type="html">&lt;h4 id=&quot;跟着PHP课程重新记录一下MySQL的笔记&quot;&gt;# 跟着PHP课程重新记录一下MySQL的笔记&lt;/h4&gt;
-&lt;h4 id=&quot;1-创建数据库格式：&quot;&gt;1.创建数据库格式：&lt;/h4&gt;
-&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;</summary>
+&lt;h4 id=&quot;1-数据库操作：&quot;&gt;1.数据库操作：&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;创建数据库&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlig</summary>
       
     
     
