@@ -17,18 +17,21 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>归档: 2022/5 | 时砾逐光</title>
-  <meta name="description" content="个人博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="时砾逐光">
-<meta property="og:url" content="http://example.com/archives/2022/05/index.html">
+  <title>CF1526B | 时砾逐光</title>
+  <meta name="description" content="传送门：CF1526B 题目描述 给你一个数x，问你这个数能不能被11,111,1111，……（最少两个1）此类数字构成。（比如33&#x3D;11+11+11,144&#x3D;111+11+11+11） 输入格式： 第一行一个正整数T（(1≤T≤10000)）表示案例数，接下来每行一个正整数x(1≤x≤10^9) 输出格式： 对于每一行的x，如果能满足题意，输出“YES”，否则输出“NO”。 输入样例：  4 3">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CF1526B">
+<meta property="og:url" content="http://example.com/2022/05/07/CF1526B/index.html">
 <meta property="og:site_name" content="时砾逐光">
-<meta property="og:description" content="个人博客">
+<meta property="og:description" content="传送门：CF1526B 题目描述 给你一个数x，问你这个数能不能被11,111,1111，……（最少两个1）此类数字构成。（比如33&#x3D;11+11+11,144&#x3D;111+11+11+11） 输入格式： 第一行一个正整数T（(1≤T≤10000)）表示案例数，接下来每行一个正整数x(1≤x≤10^9) 输出格式： 对于每一行的x，如果能满足题意，输出“YES”，否则输出“NO”。 输入样例：  4 3">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-05-07T14:18:59.000Z">
+<meta property="article:modified_time" content="2022-10-25T07:06:15.443Z">
 <meta property="article:author" content="Hiroshi">
+<meta property="article:tag" content="题解">
 <meta name="twitter:card" content="summary">
   <!-- Canonical links -->
-  <link rel="canonical" href="http://example.com/archives/2022/05/index.html">
+  <link rel="canonical" href="http://example.com/2022/05/07/CF1526B/index.html">
   
     <link rel="alternate" href="/atom.xml" title="时砾逐光" type="application/atom+xml">
   
@@ -299,68 +302,163 @@
   
   
 <main class="main" role="main">
-  	<article class="content article article-archives article-type-list" itemscope="">
-	    <header class="article-header">
-	      <h1 itemprop="title">归档: 2022/5</h1>
-	      <p class="text-muted">共 11 篇文章</p>
-	    </header>
-	    <div class="article-body">
-	      
-  
-  
+  <div class="content">
+  <article id="post-CF1526B" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
-    
+    <div class="article-header">
       
+        
+  
+    <h1 class="article-title" itemprop="name">
+      CF1526B
+    </h1>
+  
+
       
-      <section class="panel panel-default b-no">
-        <div class="panel-heading" role="tab">
-          <h3 class="panel-title">
-            <a data-toggle="collapse" href="#collapse2022" aria-expanded="true">
-              <i class="icon icon-calendar-plus text-active"></i><i class="icon icon-calendar-minus text"></i>
-              2022
-            </a>
-            <!-- <a href="/archives/2022" class="archive-year">2022</a> -->
-          </h3>
-        </div>
-        <div id="collapse2022" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading2022">
-        <div class="panel-body">
-          <div class="collection">
+      <div class="article-meta">
+        <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2022/05/07/CF1526B/" class="article-date">
+	  <time datetime="2022-05-07T14:18:59.000Z" itemprop="datePublished">2022-05-07</time>
+	</a>
+</span>
+        
+  <span class="article-category">
+    <i class="icon icon-folder"></i>
+    <a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a>
+  </span>
+
+        
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+	<a class="article-tag-link-link" href="/tags/%E9%A2%98%E8%A7%A3/" rel="tag">题解</a>
+  </span>
+
+
+        
+
+	<span class="article-read hidden-xs">
+    	<i class="icon icon-eye-fill" aria-hidden="true"></i>
+    	<span id="/2022/05/07/CF1526B/" class="leancloud_visitors"  data-flag-title="CF1526B">0</span>
+    </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2022/05/07/CF1526B/#comments" class="article-comment-link">评论</a></span>
+        
+	
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 291(字)</span>
+	
+	
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 1(分)</span>
+	
+
+      </div>
+    </div>
+    <div class="article-entry marked-body" itemprop="articleBody">
+      
+        <p><strong>传送门：<a target="_blank" rel="noopener" href="https://codeforces.com/problemset/problem/1526/B">CF1526B</a></strong></p>
+<p><strong>题目描述</strong><br>
+给你一个数x，问你这个数能不能被11,111,1111，……（最少两个1）此类数字构成。（比如33=11+11+11,144=111+11+11+11）</p>
+<p><strong>输入格式：</strong><br>
+第一行一个正整数T（(1≤T≤10000)）表示案例数，接下来每行一个正整数x(1≤x≤10^9)</p>
+<p><strong>输出格式：</strong><br>
+对于每一行的x，如果能满足题意，输出“YES”，否则输出“NO”。</p>
+<p><strong>输入样例：</strong></p>
+<blockquote>
+<p>4<br>
+33<br>
+144<br>
+121<br>
+69</p>
+</blockquote>
+<p><strong>输出样例：</strong></p>
+<blockquote>
+<p>YES<br>
+YES<br>
+YES<br>
+NO</p>
+</blockquote>
+<p><strong>思路</strong><br>
+因为1111，11111,111111等都可以由11，111组成，所以只用看该数字能不能用<strong>11，111</strong>组成即可。</p>
+<p><strong>AC代码</strong></p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;map&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;queue&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stack&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="keyword">typedef</span> <span class="type">long</span> <span class="type">long</span> ll;</span><br><span class="line"><span class="meta">#<span class="keyword">define</span> IOS ios::sync_with_stdio(false), cin.tie(0), cout.tie(0)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> max(a, b) (a &gt; b ? a : b)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> min(a, b) (a &lt; b ? a : b)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> endl <span class="string">&#x27;\n&#x27;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> n, a;</span><br><span class="line">    cin &gt;&gt; n;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        cin &gt;&gt; a;</span><br><span class="line">        <span class="type">int</span> cot = a / <span class="number">111</span>;</span><br><span class="line">        <span class="keyword">if</span> (a % <span class="number">11</span> &lt;= cot)</span><br><span class="line">            cout</span><br><span class="line">                &lt;&lt; <span class="string">&quot;YES&quot;</span> &lt;&lt; endl;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            cout &lt;&lt; <span class="string">&quot;NO&quot;</span> &lt;&lt; endl;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <div class="article-footer">
+      <blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
     
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接：</strong>
+      <a href="http://example.com/2022/05/07/CF1526B/" title="CF1526B" target="_blank" rel="external">http://example.com/2022/05/07/CF1526B/</a>
+    </li>
     
-<a href="/2022/05/09/2022%E5%B9%B4%E7%AC%AC%E5%8D%81%E4%B8%89%E5%B1%8A%E8%93%9D%E6%A1%A5%E6%9D%AF%E7%9C%81%E8%B5%9B%E4%B8%AA%E4%BA%BA%E9%A2%98%E8%A7%A3/" class="collection-item"   itemprop="url">
-  <time datetime="2022-05-09T11:24:22.000Z" itemprop="datePublished">2022-05-09</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 2022年第十三届蓝桥杯省赛个人题解
-</a>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong> 本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN协议</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+</blockquote>
+
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/Hiroshi12138" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="/images/avatar.jpg" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/Hiroshi12138" target="_blank"><span class="text-dark">Hiroshi</span><small class="ml-1x">愿前路无止境</small></a></h3>
+        <div>一只菜鸡。</div>
+      </div>
+    </figure>
+  </div>
+</div>
+
+
+    </div>
+  </article>
+  
+    
+  <section id="comments">
+  	
+      <div id="vcomments"></div>
+    
+  </section>
 
 
   
-    
-    
-    
-<a href="/2022/05/07/CF1526B/" class="collection-item"   itemprop="url">
-  <time datetime="2022-05-07T14:18:59.000Z" itemprop="datePublished">2022-05-07</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> CF1526B
-</a>
+</div>
 
-
+  <nav class="bar bar-footer clearfix" data-stick-bottom>
+  <div class="bar-inner">
   
+  <ul class="pager pull-left">
+    
+    <li class="prev">
+      <a href="/2022/05/09/2022%E5%B9%B4%E7%AC%AC%E5%8D%81%E4%B8%89%E5%B1%8A%E8%93%9D%E6%A1%A5%E6%9D%AF%E7%9C%81%E8%B5%9B%E4%B8%AA%E4%BA%BA%E9%A2%98%E8%A7%A3/" title="2022年第十三届蓝桥杯省赛个人题解"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
+    </li>
     
     
+    <li class="next">
+      <a href="/2022/05/05/%E7%B4%A0%E6%95%B0%E7%AD%9B/" title="素数筛"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
     
-<a href="/2022/05/05/%E7%B4%A0%E6%95%B0%E7%AD%9B/" class="collection-item"   itemprop="url">
-  <time datetime="2022-05-05T13:55:34.000Z" itemprop="datePublished">2022-05-05</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 素数筛
-</a>
-
-
+    
+  </ul>
   
   
-    </div></div></div></section>
+  
+  <div class="bar-right">
+    
+    <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter" data-mobile-sites="weibo,qq,qzone"></div>
+    
+  </div>
+  </div>
+</nav>
   
 
-	    </div>
-  	</article>
-  	 	
+
 </main>
 
   <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
@@ -406,6 +504,127 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 
 
 
+
+   
+
+
+<!-- custom analytics part create by xiamo -->
+<script defer src="https://cdn1.lncld.net/static/js/av-min-1.2.1.js"></script>
+<script defer>
+AV.init({
+  appId: 'P2fW71czCW0YhBXoDqMQ39FB-gzGzoHsz',
+  appKey: 'fr1MDmgqQcROt4aAmAhWpZNy'
+});
+
+function showTime(Counter) {
+	var query = new AV.Query(Counter);
+		var visitors= $('.leancloud_visitors');
+		query.greaterThanOrEqualTo("time", 0);		
+		query.find({
+			success: function(results) {
+				if (results.length == 0) {				
+					return;
+				}
+				var data = results;
+				visitors.each(function(){
+					var url = $(this).attr('id').trim();					
+					for (var i = 0; i < data.length; i++) {
+						var object = data[i];
+						var content = object.get('time');
+						var _url = object.get('url')
+						if(url == _url){
+							$(this).text(content);
+						}
+					}
+				})
+				
+			},
+			error: function(object, error) {
+				console.log("Error: " + error.code + " " + error.message);
+			}
+		});
+}
+
+function addCount(Counter) {
+	var Counter = AV.Object.extend("Counter");
+	url = $(".leancloud_visitors").attr('id').trim();
+	title = $(".leancloud_visitors").attr('data-flag-title').trim();
+	var query = new AV.Query(Counter);
+	query.equalTo("url", url);
+	query.find({
+		success: function(results) {
+			if (results.length > 0) {
+				var counter = results[0];
+				counter.fetchWhenSave(true);
+				counter.increment("time");
+				counter.save(null, {
+					success: function(counter) {
+						var content = counter.get('time');
+						$(document.getElementById(url)).text(content);
+					},
+					error: function(counter, error) {
+						console.log('Failed to save Visitor num, with error message: ' + error.message);
+					}
+				});
+			} else {
+				var newcounter = new Counter();
+				newcounter.set("title", title);
+				newcounter.set("url", url);
+				newcounter.set("time", 1);
+				newcounter.save(null, {
+					success: function(newcounter) {
+					    console.log("newcounter.get('time')="+newcounter.get('time'));
+						var content = newcounter.get('time');
+						$(document.getElementById(url)).text(content);
+					},
+					error: function(newcounter, error) {
+						console.log('Failed to create');
+					}
+				});
+			}
+		},
+		error: function(error) {
+			console.log('Error:' + error.code + " " + error.message);
+		}
+	});
+}
+$(function() {
+	var Counter = AV.Object.extend("Counter");
+	if ($('.leancloud_visitors').length == 1) {
+		addCount(Counter);
+	} else {
+		showTime(Counter);
+	}
+}); 
+</script>
+
+
+
+   
+    
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/valine"></script>
+  <script type="text/javascript">
+  var GUEST = ['nick', 'mail', 'link'];
+  var meta = 'nick,mail,link';
+  meta = meta.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#vcomments',
+    verify: false,
+    notify: false,
+    appId: 'P2fW71czCW0YhBXoDqMQ39FB-gzGzoHsz',
+    appKey: 'fr1MDmgqQcROt4aAmAhWpZNy',
+    placeholder: 'Nice day!',
+    avatar: 'mm',
+    meta: meta,
+    pageSize: '10' || 10,
+    visitor: false
+  });
+  </script>
+
+     
 
 
 
