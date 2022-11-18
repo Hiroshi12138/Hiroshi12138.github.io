@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>powershell美化和集成git</title>
+      <link href="/2022/11/07/powershell%E7%BE%8E%E5%8C%96%E5%92%8C%E9%9B%86%E6%88%90git/"/>
+      <url>/2022/11/07/powershell%E7%BE%8E%E5%8C%96%E5%92%8C%E9%9B%86%E6%88%90git/</url>
+      
+        <content type="html"><![CDATA[<h4 id="1-安装posh-git">1.安装posh-git</h4><p>在powershell运行</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Install-Module posh-git</span><br></pre></td></tr></table></figure><p>此时部分指令是无法使用的，因为powershell默认禁止运行签名脚本，所以再次运行</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Set-ExecutionPolicy RemoteSigned</span><br></pre></td></tr></table></figure><p>这样就可以允许运行签名脚本啦！</p><h4 id="2-美化powershell">2.美化powershell</h4><p>在<strong>Microsoft Store</strong>里搜索<strong>Windows Terminal</strong>，然后下载|打开，在设置—&gt;启动—&gt;默认终端应用程序里选择Windows终端即可。以后启动cmd或者powershell都会从Windows Terminal启动了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>服务器操作</title>
       <link href="/2022/10/25/%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%93%8D%E4%BD%9C/"/>
       <url>/2022/10/25/%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%93%8D%E4%BD%9C/</url>
