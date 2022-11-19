@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://example.com/2022/10/18/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2022-11-19</lastmod>
+  </url>
+  <url>
     <loc>http://example.com/2022/05/09/2022%E5%B9%B4%E7%AC%AC%E5%8D%81%E4%B8%89%E5%B1%8A%E8%93%9D%E6%A1%A5%E6%9D%AF%E7%9C%81%E8%B5%9B%E4%B8%AA%E4%BA%BA%E9%A2%98%E8%A7%A3/</loc>
     <lastmod>2022-11-18</lastmod>
   </url>
@@ -27,10 +31,6 @@
   <url>
     <loc>http://example.com/2022/10/24/HTML%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2022-10-24</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2022/10/18/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2022-10-22</lastmod>
   </url>
   <url>
     <loc>http://example.com/2022/10/16/Hexo-Github%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/</loc>
