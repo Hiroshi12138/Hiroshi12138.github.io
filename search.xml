@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Navicat无限重置试用</title>
+      <link href="/2023/01/05/Navicat%E6%97%A0%E9%99%90%E9%87%8D%E7%BD%AE%E8%AF%95%E7%94%A8/"/>
+      <url>/2023/01/05/Navicat%E6%97%A0%E9%99%90%E9%87%8D%E7%BD%AE%E8%AF%95%E7%94%A8/</url>
+      
+        <content type="html"><![CDATA[<p>使用清除注册表方法来达到无限试用Navicat Premium 16的效果，bat文件如下。可以设置定时任务来自动进行注册表清除。</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">@echo off</span><br><span class="line">​</span><br><span class="line">echo Delete HKEY_CURRENT_USER\Software\PremiumSoft\NavicatPremium\Registration[version and language]</span><br><span class="line">for /f %%i in (&#x27;&quot;REG QUERY &quot;HKEY_CURRENT_USER\Software\PremiumSoft\NavicatPremium&quot; /s | findstr /L Registration&quot;&#x27;) do (</span><br><span class="line">    reg delete %%i /va /f</span><br><span class="line">)</span><br><span class="line">echo.</span><br><span class="line">​</span><br><span class="line">echo Delete Info folder under HKEY_CURRENT_USER\Software\Classes\CLSID</span><br><span class="line">for /f %%i in (&#x27;&quot;REG QUERY &quot;HKEY_CURRENT_USER\Software\Classes\CLSID&quot; /s | findstr /E Info&quot;&#x27;) do (</span><br><span class="line">    reg delete %%i /va /f</span><br><span class="line">)</span><br><span class="line">echo.</span><br><span class="line">​</span><br><span class="line">echo Finish</span><br><span class="line">​</span><br><span class="line">pause</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>linux修改环境变量的几种方法</title>
       <link href="/2022/12/11/linux%E4%BF%AE%E6%94%B9%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/"/>
       <url>/2022/12/11/linux%E4%BF%AE%E6%94%B9%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/</url>
