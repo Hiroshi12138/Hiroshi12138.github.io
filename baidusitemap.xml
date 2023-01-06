@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://example.com/2023/01/05/Navicat%E6%97%A0%E9%99%90%E9%87%8D%E7%BD%AE%E8%AF%95%E7%94%A8/</loc>
-    <lastmod>2023-01-05</lastmod>
+    <loc>http://example.com/2022/05/07/CF1526B/</loc>
+    <lastmod>2023-01-06</lastmod>
   </url>
   <url>
     <loc>http://example.com/2022/12/11/linux%E4%BF%AE%E6%94%B9%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/</loc>
-    <lastmod>2022-12-24</lastmod>
+    <lastmod>2023-01-06</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com/2023/01/05/Navicat%E6%97%A0%E9%99%90%E9%87%8D%E7%BD%AE%E8%AF%95%E7%94%A8/</loc>
+    <lastmod>2023-01-05</lastmod>
   </url>
   <url>
     <loc>http://example.com/2022/10/25/%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%93%8D%E4%BD%9C/</loc>
@@ -39,10 +43,6 @@
   <url>
     <loc>http://example.com/2022/11/07/powershell%E7%BE%8E%E5%8C%96%E5%92%8C%E9%9B%86%E6%88%90git/</loc>
     <lastmod>2022-11-18</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2022/05/07/CF1526B/</loc>
-    <lastmod>2022-10-25</lastmod>
   </url>
   <url>
     <loc>http://example.com/2022/10/24/HTML%E7%AC%94%E8%AE%B0/</loc>
